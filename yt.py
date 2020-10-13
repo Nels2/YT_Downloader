@@ -5,12 +5,12 @@ link = input("[Fella]Enter the link for YT video you intend to download, and rem
 yt= YouTube(link)
 
 #Showing details
-print("============================")
+print("============================" * 3)
 print("Title           : ",yt.title)
 print("Number of Views :  ",yt.views)
 print("Length of video :  ",yt.length," minutes/seconds")
 print("Rating          :  ",yt.rating," of 5.0000")
-print("============================")
+print("============================" * 3)
 #Getting the highest resolution possible
 ys = yt.streams.get_by_itag('140')
 
